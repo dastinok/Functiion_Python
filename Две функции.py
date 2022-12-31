@@ -5,7 +5,7 @@ def main():
     print('Конец сообщения')
 
 
-#Определяем ф-цию message()
+#Определяем ф-цию message
 def message():
     print('Нас захватили роботы')
 
