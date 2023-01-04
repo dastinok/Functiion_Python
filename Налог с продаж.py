@@ -25,6 +25,6 @@ def reg_tax(summ):
 
 
 
-
-main()
+if __name__ == '__main__':
+    main()
 
