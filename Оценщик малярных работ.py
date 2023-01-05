@@ -27,7 +27,7 @@ def main():
     print(f'Стоимость краски = {cost_paint: .2f} рублей')
     print('-------------------------------')
     cost_work = h * COST_HOUR
-    print(f'Стоимость работ = {cost_work: .2f} рублей')
+    print(f'Стоимость работ = {cost_work:,.2f} рублей')
     print('-------------------------------')
     total_cost_of_painting_works = cost_work + cost_paint
     print(f'Общая стоимость малярных работ = {total_cost_of_painting_works: .2f} рублей')
