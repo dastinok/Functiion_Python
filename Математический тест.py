@@ -10,20 +10,12 @@ def main():
     print(f'\t  {number_1}\n'
           f'\t+ {number_2}')
 
-
-
-    try:
-        answer = int(input('Введите ответ: '))
-        pass
-    except ValueError:
-        print('Заново')
-        main()
-
-
-
-
-
-
+    while True:
+        try:
+            answer = int(input('Введите ответ: '))
+            break
+        except ValueError:
+            print('Заново')
 
     add = get_add(number_1, number_2)
 
