@@ -3,12 +3,27 @@ import random
 
 
 def main():
+
     print('--------Математический тест--------')
     number_1 = random.randint(0, 999)
     number_2 = random.randint(0, 999)
     print(f'\t  {number_1}\n'
           f'\t+ {number_2}')
-    answer = int(input('Введите ваш ответ: '))
+
+
+
+    try:
+        answer = int(input('Введите ответ: '))
+        pass
+    except ValueError:
+        print('Заново')
+        main()
+
+
+
+
+
+
 
     add = get_add(number_1, number_2)
 
@@ -29,9 +44,18 @@ def main():
             main()
 
 
+
+
+
+
+
+
 def get_add(num_1, num_2):
     total = num_1 + num_2
     return total
+
+
+
 
 
 
