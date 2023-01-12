@@ -1,24 +1,24 @@
-
-
 def main():
 
 
 
-    def is_prime(r):
+    def is_prime(num):
         status = True
-        t = 0
-        for x in range(r-2):
-            t = t + 1
-            num = r % (r-t)
-            if num == 0:
+        if num == 2:
+            status = False
+
+        num_2 = 1
+        for counter in range(num-2):
+            num_2 = num_2 + 1
+            remain = num % num_2
+            if remain == 0:
                 status = True
+                break
+
             else:
                 status = False
+                pass
         return status
-
-
-
-
     number = int(input('Введите целое число: '))
     if is_prime(number):
         print(f'Одно число поделилось без остатка отличное от 1 и {number} следовательно:')
@@ -26,6 +26,8 @@ def main():
     else:
         print(f'Ни одно число не поделилось без остатка отличное от 1 и {number} следовательно:')
         print('Число простое')
+
+
 
 
 
