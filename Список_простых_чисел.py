@@ -1,5 +1,6 @@
 
-
+BEGIN = 1
+MAX = 101
 
 
 def main():
@@ -19,7 +20,7 @@ def main():
                 pass
         return status
 
-    for i in range(1, 101):
+    for i in range(BEGIN, MAX):
         if is_prime(i):
             pass
         else:
